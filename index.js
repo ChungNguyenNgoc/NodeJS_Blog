@@ -5,14 +5,14 @@ const morgan = require("morgan");
 
 app.use(morgan("combined"));
 
-app.get("/bao-chung", (req, res) => {
+app.get("/chungngngalta2", (req, res) => {
   var a = 1;
   var b = 2;
   var c = a + b;
 
-  res.send("Hello World Chung Nguyen Ngoc!");
+  return res.send("Hello World Chung Nguyen Ngoc!");
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Example app listening at http://localhost:${port}`);
 });
